@@ -1,0 +1,27 @@
+# macOS
+.DS_Store
+
+# Julia
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+/docs/build/
+
+# Generated when a run or scan is prepared (setup_investigation.jl).
+# The settings_*.jl files that define each run are tracked; the serialised
+# copies and the per-scan-point folders are derived from them.
+Scans/*/scan_*/
+Scans/*/settings_run.jls
+Scans/*/settings_scan.jls
+Scans/*/measured_data.jls
+SingleRuns/*/settings_run.jls
+SingleRuns/*/settings_scan.jls
+SingleRuns/*/measured_data.jls
+NeuralCRNsIdentifiability/investigation_scripts/active_run.jls
+
+# Generated when a run is performed (run_investigation.jl).
+# Note: extracted_vals.jls is tracked - it is the scan summary the figure
+# scripts read, and two of them ship with the repository.
+*/*/opt_sol_*.jls
+*/*/pl_sols_*.jls
+*.log
